@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  comments:
+    image: ghcr.io/netology-code/ibweb-js-comments
+    ports:
+      - 9001:9001
+  tracker:
+    image: ghcr.io/netology-code/ibweb-js-tracker
+    ports:
+      - 9002:9002
