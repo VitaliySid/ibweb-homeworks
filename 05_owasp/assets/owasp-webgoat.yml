@@ -1,0 +1,14 @@
+version: '3.7'
+services:
+  webgoat:
+    image: webgoat/goatandwolf:latest
+    ports:
+      - 3080:8080 
+      - 3090:9090 
+      - 3088:8888  
+    environment:
+    - TZ=Europe/Amsterdam
+      #- WEBGOAT_PORT=3080
+      #- WEBGOAT_HSQLPORT=3088
+      #- WEBWOLF_PORT=3090
+      
